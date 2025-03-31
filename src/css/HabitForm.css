@@ -1,0 +1,65 @@
+.habit-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    color: black;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 94%;
+  padding: 0.85rem 1rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: rgb(69, 208, 180);
+}
+  
+.submit-btn:hover {
+    background-color: rgb(61, 186, 161);
+}
+
+.cancel-btn {
+    background-color: #dc3545;
+}
+  
+.cancel-btn:hover {
+    background-color: #c82333;
+}

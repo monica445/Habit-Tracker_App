@@ -1,0 +1,37 @@
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.habit-card .habit-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.streak-info {
+    display: flex;
+    gap: 20px;
+}
+
+.habit-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.habit-header .details-btn , .delete-btn{
+    background-color: rgb(69, 208, 180);;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.habit-header .delete-btn {
+    background-color: red;
+}
