@@ -60,10 +60,10 @@ const Dashboard = () => {
       </div>
       
       {habits.length === 0 ? (
-        <div className="empty-list">
+        <div className="empty-state">
           <p>No habits yet.</p>
           <Link to="/add-habit" className="btn" aria-label="Create a new habit">
-            Create Habit
+            Create New Habit
           </Link>
         </div>
       ) : (
