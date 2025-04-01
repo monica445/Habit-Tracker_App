@@ -10,12 +10,15 @@ const HabitCard = ({ habit, onToggle, onDelete, bgColor }) => {
       <div className="habit-header">
         <h3>{habit.name}</h3>
         <div className="habit-actions">
-          <input
-            type='checkbox'
-            checked={habit.completedToday}
-            onChange={() => onToggle(habit.id)}
-            className='habit-checkbox'
-          />
+          <label className="habit-checkbox-container">
+              <input
+                type='checkbox'
+                checked={habit.completedToday}
+                onChange={() => onToggle(habit.id)}
+                className='habit-checkbox'
+              />
+            <span className="checkmark"></span>
+          </label>
           <button onClick={() => setIsExpanded(!isExpanded)} className='details-btn'>
             {isExpanded ? 'Hide Details' : 'View Details'}
           </button>
@@ -35,8 +38,9 @@ const HabitCard = ({ habit, onToggle, onDelete, bgColor }) => {
           </p>
           <div className="streak-info">
             <span>Target: {habit.target} days/week</span>
+            <span>Done: {habit.completedThisWeek}</span>
           </div>
-          <ProgressChart progress={habit.streak} goal={habit.target} />
+          <ProgressChart progress={habit.completedThisWeek} goal={habit.target} />
         </div>
       )}
     </div>

@@ -13,11 +13,10 @@ const AddHabit = () => {
     const habitWithId = {
       ...newHabit,
       id: Date.now().toString(),
-      streak: 0,
       completedToday: false,
-      createdAt: new Date().toISOString(),
-      lastUpdated: new Date().toISOString()
-    }
+      completedThisWeek: 0,
+      lastCompleted: null // Tracks last completion date
+    };
     
     const updatedHabits = [...habits, habitWithId]
     setHabits(updatedHabits)

@@ -14,12 +14,12 @@ const Navbar = () => {
       <div className="nav-links">
         <Link 
           to="/dashboard" 
-          className={`nav-link ${location.pathname.includes('dashboard') ? 'active' : ''}`}
+          className= 'nav-link' 
         > Dashboard
         </Link>
         <Link 
           to="/add-habit" 
-          className={`nav-link ${location.pathname.includes('add-habit') ? 'active' : ''}`}
+          className= 'nav-link'
         > Add Habit
         </Link>
       </div>
